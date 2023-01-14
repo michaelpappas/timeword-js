@@ -15,14 +15,13 @@ function timeWord(time) {
   let meridien = setMeridien(milTime);
 
   if (minutes == 0) {
-    //return hours[hour] + " o'clock " + meridien
     return hours[hour] + " o'clock " + meridien;
   }
-  //return hours[hour] + ' ' + setMin(minutes) + ' ' + meridien
+
   return hours[hour] + ' ' + setMin(minutes) + ' ' + meridien;
 
 
-  //
+
 }
 /** Takes in a number of minutes and returns a string
  * of the minutes converted to word numbers
@@ -114,5 +113,4 @@ const hours = {
   23: "eleven",
 };
 
-// timeWord(process.argv[2]);
 module.exports = timeWord;
