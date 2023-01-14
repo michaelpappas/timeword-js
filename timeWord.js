@@ -1,5 +1,7 @@
 "use strict";
-
+/** takes in a string of time in 24 format and returns a string of the time
+ * in coloquial time speak.
+ */
 function timeWord(time) {
   const milTime = Number(time.replace(":", ""));
 
